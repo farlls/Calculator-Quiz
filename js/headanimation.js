@@ -8,5 +8,8 @@ function movelight(){
     $('#result-item').toggleClass('result-item-dark');
     $('.history-item').toggleClass('history-item-dark');
     $('#undo').toggleClass('undo-dark');
+    $(".icon-sun").toggleClass("icon-sun-dark");
+    $(".icon-moon").toggleClass("icon-moon-dark");
+    $(".icon-back").toggleClass("icon-back-dark");
     
 }

@@ -82,7 +82,7 @@ body{
     border-radius: 30px 30px 30px 30px;
 }
 .background-operator-dark{
-    background-color: #1E1E1E;
+    background-color: #292D36;
 }
 .container-operator{
     display: grid;
@@ -135,23 +135,42 @@ body{
     transform: translateX(-125%);
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-#icon-moon{
+.icon-moon{
     height: 12.95px;
     width: 12.95px;
     margin-left: 5px;
+    background-image: url("/icon/moonlight.png");
+    background-position: center;
+    background-size: cover;
 }
-#icon-sun{
+.icon-moon-dark{
+    background-image: url("/icon/moondark.png");
+}
+.icon-sun{
     z-index: 1;
     width: 15.95px;
     height: 15.95px;
+    background-image: url("/icon/sunlight.png");
+    background-position: center;
+    background-size: cover;
+}
+.icon-sun-dark{
+    background-image: url("/icon/sundark.png");
 }
 #undo{
     height: 20px;
     width:  18px;
     
 }
-.undo-dark{
-    fill: #d14d4d;
+.icon-back{
+    height: 52px;
+    width: 52px;
+    background-image: url("/icon/backlight.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.icon-back-dark{
+    background-image: url("/icon/backdark.png");
 }
 
 .co{
