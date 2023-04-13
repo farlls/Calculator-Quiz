@@ -11,14 +11,13 @@ function calculate(){
     var ribuan;
     var	reverse = hasil.toString().split('').reverse().join(''),
 	ribuan 	= reverse.match(/\d{1,3}/g);
-	hasil_ribuan	= ribuan.join('.').split('').reverse().join('');
-    console.log(hasil_ribuan);
+	hasil_ribuan	= ribuan.join('.').split('').reverse().join('');		
+ 
 }
 
 function pushBtn(value) {
-         
-        var pushed = value.innerHTML;
 
+        var pushed = value.innerHTML;
         console.log(pushed);
 
         if (pushed == '=') {
