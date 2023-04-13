@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" /> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="section">
+    <div class="container">
+        <div class="container-head">
+        <div  onclick="movelight()" class="head">
+            <div class="buttonMove"></div>
+                <img id="icon-moon" src="icon/moonlight.png" alt="">
+                <img id="icon-sun" src="icon/sunlight.png" alt="">
+        </div>
+    </div>
+        <div class="container-display">
+            <div class="history-item">
+            </div>
+            <div id="result-item">0</div>
+        </div>
+        <div class="background-operator">
+        <div class="container-operator">
+            <button onclick="removeHistory() "class="shape green">AC</button>
+            <button onclick="pushBtn(this) "class="shape green">+/-</button>
+            <button onclick="pushBtn(this) "class="shape green">%</button>
+            <button onclick="pushBtn(this) "class="shape co">/</button>
+            <button onclick="pushBtn(this) "class="shape">7</button>
+            <button onclick="pushBtn(this) "class="shape">8</button>
+            <button onclick="pushBtn(this) "class="shape">9</button>
+            <button onclick="pushBtn(this)  "class="shape co">*</button>
+            <button onclick="pushBtn(this) "class="shape">4</button>
+            <button onclick="pushBtn(this) "class="shape">5</button>
+            <button onclick="pushBtn(this) "class="shape">6</button>
+            <button onclick="pushBtn(this) "class="shape co">+</button>
+            <button onclick="pushBtn(this) "class="shape">1</button>
+            <button onclick="pushBtn(this) "class="shape">2</button>
+            <button onclick="pushBtn(this) "class="shape">3</button>
+            <button onclick="pushBtn(this) "class="shape co">-</button>
+            <button onclick="pushBtn(this)" class="shape"> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="undo"><path d="M447.9 368.2c0-16.8 3.6-83.1-48.7-135.7-35.2-35.4-80.3-53.4-143.3-56.2V96L64 224l192 128v-79.8c40 1.1 62.4 9.1 86.7 20 30.9 13.8 55.3 44 75.8 76.6l19.2 31.2H448c0-10.1-.1-22.9-.1-31.8z"></path></svg>
+            </button>
+            <button onclick="pushBtn(this) "class="shape">0</button>
+            <button onclick="pushBtn(this) "class="shape">.</button>
+            <button onclick="pushBtn(this) "class="shape bg">=</button>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+<script src="js/headanimation.js"></script>
+</html>
