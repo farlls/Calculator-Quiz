@@ -1,6 +1,7 @@
 var historyLabel = document.getElementsByClassName('history-item')[0];
 var ResultLabel = document.getElementById('result-item');
-    
+
+const BackspaceBtn = document.getElementById('backspace-btn');
 function removeHistory(){
     historyLabel.innerHTML = ''
     ResultLabel.innerHTML = ''
@@ -25,20 +26,10 @@ function pushBtn(value) {
            calculate();
             
         } else if (pushed == 'AC') {
-           removeHistory();
+           removeHistory(); 
         }
-        else if (pushed == 'l') {
-            if (ResultLabel.innerHTML == '0') {
-                historyLabel.innerHTML = pushed;
-                ResultLabel.innerHTML = pushed;
-               
-            } else {
-                
-                ResultLabel.innerHTML -= pushed; 
-                historyLabel.innerHTML -= pushed  
-            }
-        }else 
-        {
+        else 
+        {   
             if (ResultLabel.innerHTML == '0') {
                 historyLabel.innerHTML = pushed;
                 ResultLabel.innerHTML = pushed;
@@ -50,4 +41,10 @@ function pushBtn(value) {
             }
         }
     }
-    
+
+    BackspaceBtn.onclick = function(){
+        const currentValue = ResultLabel.innerHTML;
+        const newValue = currentValue.slice(0, -1);
+        ResultLabel.innerHTML = newValue;
+        historyLabel.innerHTML = newValue;
+      }

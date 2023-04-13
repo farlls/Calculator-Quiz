@@ -3,8 +3,6 @@
 body{
     margin: 0;
     padding: 0;
-   
-
 }
 .section{
     height: 100vh;
@@ -39,7 +37,7 @@ body{
     position: relative;
     width: 61px;
     height: 35px;
-    background: #F9F9F9;
+    background: #ececec;
     border-radius: 50px;
 }
 .headdark{
@@ -104,6 +102,18 @@ body{
     font-size: 16px;
     border: none;
 }
+.shape-icon{
+    background-color: #F7F7F7;
+    height: 52px;
+    width: 52px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 16px;
+    border: none;
+}
 .shapedark{
     background-color: #272B33;
     color: #F7F7F7;
@@ -141,7 +151,7 @@ body{
     
 }
 .undo-dark{
-    fill: #ff0000;
+    fill: #d14d4d;
 }
 
 .co{
