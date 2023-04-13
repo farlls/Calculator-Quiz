@@ -27,6 +27,11 @@ function pushBtn(value) {
             
         } else if (pushed == 'AC') {
            removeHistory(); 
+        }else if(pushed == '+/-'){
+            if (ResultLabel.innerHTML.charAt(0) === "-") {
+				return (ResultLabel.innerHTML = ResultLabel.innerHTML.slice(1));
+			}
+			return (ResultLabel.innerHTML = "-" + ResultLabel.innerHTML);
         }
         else 
         {   
